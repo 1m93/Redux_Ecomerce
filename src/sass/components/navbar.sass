@@ -1,0 +1,27 @@
+header 
+    padding: $smSpace
+    background-color: $HeaderColor
+    position: fixed
+    width: 100vw
+    .navbar 
+        display: flex
+        align-items: center
+        &__text 
+            text-decoration: none 
+            color: white
+            h1 
+                margin: 0 $mdSpace
+        &__search 
+            & > * 
+                border: 1px solid $SearchColor
+                outline: none
+            input 
+                padding: 7px $smSpace
+                width: 250px
+                border-top-left-radius: $xsSpace 
+                border-bottom-left-radius: $xsSpace
+            button 
+                padding: 7px $xlSpace
+                background-color: $SearchColor
+                border-top-right-radius: $xsSpace 
+                border-bottom-right-radius: $xsSpace

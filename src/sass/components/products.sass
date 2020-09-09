@@ -1,0 +1,45 @@
+.products 
+    margin-left: 16vw
+    padding: 17px
+    &__error 
+        text-align: center
+    &__head 
+        display: flex 
+        justify-content: space-between
+        &-sort 
+            label 
+                margin-right: $xsSpace
+    &__list 
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -0.5%
+        &-item 
+            box-sizing: border-box
+            flex-basis: 24%
+            margin: 1% 0.5% 0
+            border: 1px solid $BorderColor
+            box-shadow: 0 0 3px #f6f6f6
+            padding: $smSpace
+            display: flex 
+            flex-direction: column
+            justify-content: space-between
+            &-img 
+                padding-bottom: 60%
+                background-size: contain !important
+            &-title 
+                margin: $smSpace 0
+            &-foot
+                margin-top: $smSpace 
+                display: flex
+                justify-content: space-between
+    &__pagination 
+        text-align: center
+        margin-top: $lgSpace
+        background-color: $BorderColor
+        padding: $smSpace
+        small 
+            font-size: 1.1em
+            margin: 0 $xsSpace
+            color: $PageColor
+            &:hover
+                color: $LinkColor

@@ -1,0 +1,558 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5477500_sb.jpg",
+			"name": "Amazon - Fire TV Stick with Alexa Voice Remote - Black",
+			"description": "Streaming media plyr",
+			"price": 39.99,
+			"rate": 5,
+			"type": "Appliancies",
+			"brand": "Insignia"
+		},
+		{
+			"id": 2,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4397400_sb.jpg",
+			"name": "Google - Chromecast - Black",
+			"description": "Streaming media plyr",
+			"price": 35,
+			"rate": 5,
+			"type": "Appliancies",
+			"brand": "Insignia"
+		},
+		{
+			"id": 3,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5588602_sb.jpg",
+			"name": "Dell - Inspiron 15.6'' Touch-Screen Laptop - Intel Core i5 - 6GB Memory - 1TB Hard Drive - Black",
+			"description": "Burst skus",
+			"price": 499.99,
+			"rate": 2,
+			"type": "Appliancies",
+			"brand": "Insignia"
+		},
+		{
+			"id": 4,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5578851_sb.jpg",
+			"name": "Amazon - Echo Dot",
+			"description": "Voice assistants",
+			"price": 49.99,
+			"rate": 1,
+			"type": "Appliancies",
+			"brand": "Insignia"
+		},
+		{
+			"id": 5,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/6443034_sb.jpg",
+			"name": "Apple - MacBook Air® (Latest Model) - 13.3'' Display - Intel Core i5 - 8GB Memory - 128GB Flash Storage - Silver",
+			"description": "Apple",
+			"price": 999.99,
+			"rate": 3,
+			"type": "Appliancies",
+			"brand": "Insignia"
+		},
+		{
+			"id": 6,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4863102_sb.jpg",
+			"name": "Sharp - 50'' Class (49.5''' Diag.) - LED - 1080p - Smart - HDTV Roku TV - Black",
+			"description": "45''-50''  tv's",
+			"price": 29.99,
+			"rate": 5,
+			"type": "Appliancies",
+			"brand": "Insignia"
+		},
+		{
+			"id": 7,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5578849_sb.jpg",
+			"name": "Google - Google Home - White/Slate fabric",
+			"description": "Voice assistants",
+			"price": 129,
+			"rate": 3,
+			"type": "Appliancies",
+			"brand": "Insignia"
+		},
+		{
+			"id": 8,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/6848136_sb.jpg",
+			"name": "Apple - EarPods™ with Remote and Mic - White",
+			"description": "Earbud headphones",
+			"price": 29.99,
+			"rate": 2,
+			"type": "Appliancies",
+			"brand": "Insignia"
+		},
+		{
+			"id": 9,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4374300_sb.jpg",
+			"name": "Philips - hue A19 Smart LED Light Bulb - White Only",
+			"description": "Smart lighting",
+			"price": 14.99,
+			"rate": 4,
+			"type": "Appliancies",
+			"brand": "SamSung"
+		},
+		{
+			"id": 10,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5723538_sb.jpg",
+			"name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Zelda)",
+			"description": "Toy 2 life character",
+			"price": 15.99,
+			"rate": 0,
+			"type": "Appliancies",
+			"brand": "SamSung"
+		},
+		{
+			"id": 11,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5723537_sb.jpg",
+			"name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Link (Archer))",
+			"description": "Toy 2 life character",
+			"price": 15.99,
+			"rate": 0,
+			"type": "Appliancies",
+			"brand": "SamSung"
+		},
+		{
+			"id": 12,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5513500_sb.jpg",
+			"name": "Roku - Express Streaming Media Player - Black",
+			"description": "Streaming media plyr",
+			"price": 29.99,
+			"rate": 4,
+			"type": "Appliancies",
+			"brand": "SamSung"
+		},
+		{
+			"id": 13,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5723529_sb.jpg",
+			"name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Link (Rider))",
+			"description": "Toy 2 life character",
+			"price": 15.99,
+			"rate": 0,
+			"type": "Appliancies",
+			"brand": "SamSung"
+		},
+		{
+			"id": 14,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/9881868_rb.jpg",
+			"name": "Rocketfish™ - Tilting TV Wall Mount for Most 3''-70''' TVs - Black",
+			"description": "Tv mounts",
+			"price": 99.99,
+			"rate": 4,
+			"type": "Appliancies",
+			"brand": "SamSung"
+		},
+		{
+			"id": 15,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5723700_sb.jpg",
+			"name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Guardian)",
+			"description": "Toy 2 life character",
+			"price": 19.99,
+			"rate": 0,
+			"type": "Appliancies",
+			"brand": "SamSung"
+		},
+		{
+			"id": 16,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5407064_sb.jpg",
+			"name": "LG - Ultra Slim 8x Max. DVD Write Speed External USB DVD±RW/CD-RW Drive - Black",
+			"description": "External",
+			"price": 39.99,
+			"rate": 4,
+			"type": "Audio",
+			"brand": "SamSung"
+		},
+		{
+			"id": 17,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4743301_sb.jpg",
+			"name": "Sony - BDP-S3700 - Streaming Wi-Fi Built-In Blu-ray Player - Black",
+			"description": "Blu-ray",
+			"price": 89.99,
+			"rate": 4,
+			"type": "Audio",
+			"brand": "SamSung"
+		},
+		{
+			"id": 18,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4806800_sb.jpg",
+			"name": "Insignia™ - 55'' Class - (54.6'' Diag.) - LED - 1080p - HDTV - Black",
+			"description": "51''-60'' tv's",
+			"price": 379.99,
+			"rate": 4,
+			"type": "Audio",
+			"brand": "Metra"
+		},
+		{
+			"id": 19,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5606300_sb.jpg",
+			"name": "HP - 15.6'' Laptop - AMD A6-Series - 4GB Memory - 500GB Hard Drive - Black",
+			"description": "Burst skus",
+			"price": 259.99,
+			"rate": 4,
+			"type": "Cameras",
+			"brand": "Metra"
+		},
+		{
+			"id": 20,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5723548_sb.jpg",
+			"name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Bokoblin)",
+			"description": "Toy 2 life character",
+			"price": 15.99,
+			"rate": 0,
+			"type": "Cameras",
+			"brand": "Metra"
+		},
+		{
+			"id": 21,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4984700_sb.jpg",
+			"name": "AT&T GoPhone - Samsung Galaxy Express 3 4G LTE with 8GB Memory Prepaid Cell Phone",
+			"description": "At&t go phone",
+			"price": 49.99,
+			"rate": 3,
+			"type": "Cameras",
+			"brand": "Metra"
+		},
+		{
+			"id": 22,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5326401_sb.jpg",
+			"name": "Insignia™ - 32'' Class - (31.5'' Diag.) - LED - 720p - HDTV - Black",
+			"description": "Mid 32'' lcd",
+			"price": 139.99,
+			"rate": 3,
+			"type": "Car",
+			"brand": "HP"
+		},
+		{
+			"id": 23,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5496140_sb.jpg",
+			"name": "Lenovo - 110-15ISK 15.6'' Laptop - Intel Core i3 - 4GB Memory - 1TB Hard Drive - Black",
+			"description": "Burst skus",
+			"price": 329.99,
+			"rate": 4,
+			"type": "Car",
+			"brand": "Metra"
+		},
+		{
+			"id": 24,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5578864_sb.jpg",
+			"name": "Amazon - Echo Dot",
+			"description": "Voice assistants",
+			"price": 49.99,
+			"rate": 3,
+			"type": "Car",
+			"brand": "Metra"
+		},
+		{
+			"id": 25,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5495315_sb.jpg",
+			"name": "Harman/kardon - Onyx Mini Portable Wireless Speaker - Black",
+			"description": "Wireless speakers",
+			"price": 199.99,
+			"rate": 2,
+			"type": "Car",
+			"brand": "Metra"
+		},
+		{
+			"id": 26,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5496202_sb.jpg",
+			"name": "Insignia™ - Portable Wireless Speaker - Blacks",
+			"description": "Wireless speakers",
+			"price": 39.99,
+			"rate": 4,
+			"type": "Cell",
+			"brand": "Metra"
+		},
+		{
+			"id": 27,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/2449084_sb.jpg",
+			"name": "Insignia™ - 92 Bright Multipurpose Paper - White",
+			"description": "Ream paper",
+			"price": 5.99,
+			"rate": 2,
+			"type": "Cell",
+			"brand": "Metra"
+		},
+		{
+			"id": 28,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4397400_sb.jpg",
+			"name": "Google - Chromecast - Black",
+			"description": "Streaming media plyr",
+			"price": 35,
+			"rate": 4,
+			"type": "Cell",
+			"brand": "HP"
+		},
+		{
+			"id": 29,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5588602_sb.jpg",
+			"name": "Dell - Inspiron 15.6'' Touch-Screen Laptop - Intel Core i5 - 6GB Memory - 1TB Hard Drive - Black",
+			"description": "Burst skus",
+			"price": 499.99,
+			"rate": 1,
+			"type": "Computer",
+			"brand": "HP"
+		},
+		{
+			"id": 30,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5578851_sb.jpg",
+			"name": "Amazon - Echo Dot",
+			"description": "Voice assistants",
+			"price": 49.99,
+			"rate": 1,
+			"type": "Computer",
+			"brand": "HP"
+		},
+		{
+			"id": 31,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/6443034_sb.jpg",
+			"name": "Apple - MacBook Air® (Latest Model) - 13.3'' Display - Intel Core i5 - 8GB Memory - 128GB Flash Storage - Silver",
+			"description": "Apple",
+			"price": 999.99,
+			"rate": 1,
+			"type": "Computer",
+			"brand": "HP"
+		},
+		{
+			"id": 32,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4863102_sb.jpg",
+			"name": "Sharp - 50'' Class (49.5''' Diag.) - LED - 1080p - Smart - HDTV Roku TV - Black",
+			"description": "45''-50''  tv's",
+			"price": 29.99,
+			"rate": 4,
+			"type": "Computer",
+			"brand": "HP"
+		},
+		{
+			"id": 33,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5578849_sb.jpg",
+			"name": "Google - Google Home - White/Slate fabric",
+			"description": "Voice assistants",
+			"price": 129,
+			"rate": 4,
+			"type": "Computer",
+			"brand": "HP"
+		},
+		{
+			"id": 34,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/6848136_sb.jpg",
+			"name": "Apple - EarPods™ with Remote and Mic - White",
+			"description": "Earbud headphones",
+			"price": 29.99,
+			"rate": 4,
+			"type": "Health",
+			"brand": "HP"
+		},
+		{
+			"id": 35,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4374300_sb.jpg",
+			"name": "Philips - hue A19 Smart LED Light Bulb - White Only",
+			"description": "Smart lighting",
+			"price": 14.99,
+			"rate": 4,
+			"type": "Health",
+			"brand": "Apple"
+		},
+		{
+			"id": 36,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5723538_sb.jpg",
+			"name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Zelda)",
+			"description": "Toy 2 life character",
+			"price": 15.99,
+			"rate": 0,
+			"type": "Health",
+			"brand": "Apple"
+		},
+		{
+			"id": 37,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5723537_sb.jpg",
+			"name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Link (Archer))",
+			"description": "Toy 2 life character",
+			"price": 15.99,
+			"rate": 0,
+			"type": "Health",
+			"brand": "Apple"
+		},
+		{
+			"id": 38,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5513500_sb.jpg",
+			"name": "Roku - Express Streaming Media Player - Black",
+			"description": "Streaming media plyr",
+			"price": 29.99,
+			"rate": 4,
+			"type": "Health",
+			"brand": "Apple"
+		},
+		{
+			"id": 39,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5723529_sb.jpg",
+			"name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Link (Rider))",
+			"description": "Toy 2 life character",
+			"price": 15.99,
+			"rate": 0,
+			"type": "Office",
+			"brand": "Apple"
+		},
+		{
+			"id": 40,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/9881868_rb.jpg",
+			"name": "Rocketfish™ - Tilting TV Wall Mount for Most 3''-70''' TVs - Black",
+			"description": "Tv mounts",
+			"price": 99.99,
+			"rate": 4,
+			"type": "Office",
+			"brand": "Apple"
+		},
+		{
+			"id": 41,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5723700_sb.jpg",
+			"name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Guardian)",
+			"description": "Toy 2 life character",
+			"price": 19.99,
+			"rate": 0,
+			"type": "Office",
+			"brand": "Apple"
+		},
+		{
+			"id": 42,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5407064_sb.jpg",
+			"name": "LG - Ultra Slim 8x Max. DVD Write Speed External USB DVD±RW/CD-RW Drive - Black",
+			"description": "External",
+			"price": 39.99,
+			"rate": 4,
+			"type": "Office",
+			"brand": "Apple"
+		},
+		{
+			"id": 43,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4743301_sb.jpg",
+			"name": "Sony - BDP-S3700 - Streaming Wi-Fi Built-In Blu-ray Player - Black",
+			"description": "Blu-ray",
+			"price": 89.99,
+			"rate": 4,
+			"type": "Office",
+			"brand": "Apple"
+		},
+		{
+			"id": 44,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4806800_sb.jpg",
+			"name": "Insignia™ - 55'' Class - (54.6'' Diag.) - LED - 1080p - HDTV - Black",
+			"description": "51''-60'' tv's",
+			"price": 379.99,
+			"rate": 4,
+			"type": "TV",
+			"brand": "Apple"
+		},
+		{
+			"id": 45,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5606300_sb.jpg",
+			"name": "HP - 15.6'' Laptop - AMD A6-Series - 4GB Memory - 500GB Hard Drive - Black",
+			"description": "Burst skus",
+			"price": 259.99,
+			"rate": 4,
+			"type": "TV",
+			"brand": "Apple"
+		},
+		{
+			"id": 46,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5723548_sb.jpg",
+			"name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Bokoblin)",
+			"description": "Toy 2 life character",
+			"price": 15.99,
+			"rate": 0,
+			"type": "TV",
+			"brand": "Apple"
+		},
+		{
+			"id": 47,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/4984700_sb.jpg",
+			"name": "AT&T GoPhone - Samsung Galaxy Express 3 4G LTE with 8GB Memory Prepaid Cell Phone",
+			"description": "At&t go phone",
+			"price": 49.99,
+			"rate": 4,
+			"type": "TV",
+			"brand": "Apple"
+		},
+		{
+			"id": 48,
+			"image": "https://cdn-demo.algolia.com/bestbuy-0118/5326401_sb.jpg",
+			"name": "Insignia™ - 32'' Class - (31.5'' Diag.) - LED - 720p - HDTV - Black",
+			"description": "Mid 32'' lcd",
+			"price": 139.99,
+			"rate": 4,
+			"type": "Video",
+			"brand": "Apple"
+		}
+	],
+	"types": [
+		{
+			"id": 1,
+			"name": "Appliancies",
+			"title": "Appliancies"
+		},
+		{
+			"id": 2,
+			"name": "Audio",
+			"title": "Audio"
+		},
+		{
+			"id": 3,
+			"name": "Cameras",
+			"title": "Cameras & Camcorders"
+		},
+		{
+			"id": 4,
+			"name": "Car",
+			"title": "Car Electronics & GPS"
+		},
+		{
+			"id": 5,
+			"name": "Cell",
+			"title": "Cell Phones"
+		},
+		{
+			"id": 6,
+			"name": "Computer",
+			"title": "Computer & Tablets"
+		},
+		{
+			"id": 7,
+			"name": "Health",
+			"title": "Health, Fitness & Beauty"
+		},
+		{
+			"id": 8,
+			"name": "Office",
+			"title": "Office & School Supplies"
+		},
+		{
+			"id": 9,
+			"name": "TV",
+			"title": "TV & Home Theater"
+		},
+		{
+			"id": 10,
+			"name": "Video",
+			"title": "Video Games"
+		}
+	],
+	"brands": [
+		{
+			"id": 1,
+			"name": "Apple"
+		},
+		{
+			"id": 2,
+			"name": "HP"
+		},
+		{
+			"id": 3,
+			"name": "Insignia"
+		},
+		{
+			"id": 4,
+			"name": "Metra"
+		},
+		{
+			"id": 5,
+			"name": "SamSung"
+		}
+	]
+}

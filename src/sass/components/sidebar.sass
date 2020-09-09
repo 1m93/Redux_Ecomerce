@@ -1,0 +1,63 @@
+.sidebar 
+    position: fixed
+    overflow: auto
+    left: 0
+    top: 63px
+    bottom: 0
+    width: 14vw
+    padding: 18px
+    h4 
+        color: $TextColor
+        font-weight: normal
+        margin-bottom: $mdSpace
+    h5 
+        margin-bottom: $smSpace
+    & > div 
+        margin-bottom: $lgSpace
+    & > button 
+        width: 100%
+        margin-bottom: $lgSpace
+        padding: $smSpace
+        background-color: white
+        border-radius: $xsSpace 
+        &:hover 
+            background: $BorderColor
+    .type 
+        border-bottom: 1px solid $BorderColor
+        padding-bottom: $lgSpace
+    .brand 
+        &__search 
+            box-sizing: border-box
+            width: 100%
+            padding: $xsSpace
+            margin-bottom: $xsSpace
+        &__name 
+            input 
+                margin-right: $xsSpace
+    .rate 
+        small 
+            display: block
+            margin-bottom: 2px
+    .price
+        border-bottom: 1px solid $BorderColor
+        padding-bottom: $lgSpace
+        &__form
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            margin-top: $xsSpace
+            span 
+                color: $TextColor
+            &-input 
+                display: flex
+                align-items: center
+                width: 35%
+                label
+                    margin-right: 2px
+                    font-weight: 700
+                    color: #333
+                input 
+                    width: 100%
+    &__foot 
+        text-align: center
