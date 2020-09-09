@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { useSelector, useDispatch } from "react-redux";
+import { setAllProducts, setCount, setPage } from "../../actions/products";
 
-function Pagination({
-	handlePageSelect,
-	type,
-	brand,
-	from,
-	to,
-	search,
-	page,
-	rate,
-	countResult,
-}) {
-	const [products, setProducts] = useState([]);
+function Pagination() {
+	const allProducts = useSelector((state) => state.products.allProducts);
+	const type = useSelector((state) => state.sidebar.type);
+	const brand = useSelector((state) => state.sidebar.brand);
+	const rate = useSelector((state) => state.sidebar.rate);
+	const from = useSelector((state) => state.sidebar.from);
+	const to = useSelector((state) => state.sidebar.to);
+	const search = useSelector((state) => state.navbar.search);
+	const page = useSelector((state) => state.products.page);
 	const pages = [];
+	const dispatch = useDispatch();
 
 	useEffect(() => {
 		let xhr = new XMLHttpRequest();
@@ -45,7 +45,7 @@ function Pagination({
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState !== 4) return;
 			if (xhr.status === 200) {
-				setProducts(JSON.parse(xhr.responseText));
+				dispatch(setAllProducts(JSON.parse(xhr.responseText)));
 			} else {
 				console.log("HTTP error", xhr.status, xhr.statusText);
 			}
@@ -53,11 +53,15 @@ function Pagination({
 		xhr.send();
 	}, [type, brand, rate, from, to, search]);
 
-	countResult(products.length);
+	dispatch(setCount(allProducts.length))
 
-	const pageNum = Math.ceil(products.length / 16);
+	const pageNum = Math.ceil(allProducts.length / 16);
 	for (let i = 1; i <= pageNum; i++) {
 		pages.push(i);
+	}
+
+	const handlePageSelect = (value) => {
+		dispatch(setPage(value))
 	}
 
 	return (

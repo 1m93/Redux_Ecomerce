@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import "../../sass/style.sass";
+import { useDispatch } from "react-redux";
+import { setType } from "../../actions/sidebar";
 
-function Type({ handleTypeSelect }) {
+function Type() {
 	const [types, setTypes] = useState([]);
+	const dispatch = useDispatch();
 
 	useEffect(() => {
 		let xhr = new XMLHttpRequest();
@@ -25,7 +27,7 @@ function Type({ handleTypeSelect }) {
 			<h4 className="type__title">Show result for</h4>
 			{types.map((item) => (
 				<div className="type__name" key={item.id}>
-					<small onClick={() => handleTypeSelect(item.name)}>
+					<small onClick={() => dispatch(setType(item.name))}>
 						<FontAwesomeIcon icon={faAngleRight} /> {item.title}
 					</small>
 				</div>

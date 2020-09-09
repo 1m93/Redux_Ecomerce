@@ -1,12 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Item from "../components/products/Item";
 import Pagination from "../components/products/Pagination";
+import { useSelector, useDispatch } from "react-redux";
+import * as myFunction from "../actions/products";
 
-function Products({ type, brand, rate, from, to, search }) {
-	const [products, setProducts] = useState([]);
-	const [page, setPage] = useState(1);
-	const [result, setResult] = useState("");
-	const [sort, setSort] = useState("");
+function Products() {
+	const products = useSelector((state) => state.products.products);
+	const type = useSelector((state) => state.sidebar.type);
+	const brand = useSelector((state) => state.sidebar.brand);
+	const rate = useSelector((state) => state.sidebar.rate);
+	const from = useSelector((state) => state.sidebar.from);
+	const to = useSelector((state) => state.sidebar.to);
+	const search = useSelector((state) => state.navbar.search);
+	const sort = useSelector((state) => state.products.sort);
+	const page = useSelector((state) => state.products.page);
+	const count = useSelector((state) => state.products.count);
+	const dispatch = useDispatch();
 
 	useEffect(() => {
 		document.title = "Ecomerce";
@@ -42,7 +51,7 @@ function Products({ type, brand, rate, from, to, search }) {
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState !== 4) return;
 			if (xhr.status === 200) {
-				setProducts(JSON.parse(xhr.responseText));
+				dispatch(myFunction.setProducts(JSON.parse(xhr.responseText)));
 			} else {
 				console.log("HTTP error", xhr.status, xhr.statusText);
 			}
@@ -50,26 +59,18 @@ function Products({ type, brand, rate, from, to, search }) {
 		xhr.send();
 	}, [page, type, brand, rate, from, to, search, sort]);
 
-	const countResult = (value) => {
-		setResult(value);
-	};
-
-	const handlePageSelect = (value) => {
-		setPage(value);
-	};
-
 	return (
 		<div className="products">
 			{products.length > 0 ? (
 				<div>
 					<div className="products__head">
-						<p className="products__head-results">{result} results found</p>
+						<p className="products__head-results">{count} results found</p>
 						<div className="products__head-sort">
 							<label>Sort by</label>
 							<select
 								value={sort}
 								onChange={(value) => {
-									setSort(value.target.value);
+									dispatch(myFunction.setSort(value.target.value));
 								}}
 							>
 								<option value="">Featured</option>
@@ -83,17 +84,7 @@ function Products({ type, brand, rate, from, to, search }) {
 							<Item product={item} key={item.id} />
 						))}
 					</div>
-					<Pagination
-						handlePageSelect={handlePageSelect}
-						type={type}
-						brand={brand}
-						from={from}
-						to={to}
-						search={search}
-						page={page}
-						countResult={countResult}
-						rate={rate}
-					/>
+					<Pagination />
 				</div>
 			) : (
 				<p className="products__error">NO RESULT FOUND</p>

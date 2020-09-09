@@ -2,8 +2,12 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "../sass/style.sass";
+import { useDispatch } from "react-redux";
+import * as myFunction from "../actions/navbar";
 
-function Navbar({ handleSearchChange }) {
+function Navbar() {
+	const dispatch = useDispatch();
+
 	return (
 		<header>
 			<div className="navbar">
@@ -23,7 +27,7 @@ function Navbar({ handleSearchChange }) {
 						type="text"
 						placeholder="Search a product"
 						onChange={(value) => {
-							handleSearchChange(value.target.value);
+							dispatch(myFunction.setSearch(value.target.value));
 						}}
 					/>
 					<button type="button">

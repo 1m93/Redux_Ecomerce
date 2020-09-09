@@ -1,11 +1,14 @@
 import React from "react";
-import "../../sass/style.sass";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as fasStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
+import { useSelector, useDispatch } from "react-redux";
+import { setRate } from "../../actions/sidebar";
 
-function Rate({ handleRateSelect, rate }) {
+function Rate() {
+	const rate = useSelector((state) => state.sidebar.rate);
 	const ratings = [5, 4, 3, 2, 1];
+	const dispatch = useDispatch();
 
 	const displayRate = (rate) => {
 		let stars = [];
@@ -34,9 +37,9 @@ function Rate({ handleRateSelect, rate }) {
 					className="rate__star"
 					key={item}
 					onClick={() => {
-						handleRateSelect(!rate ? item : "");
+						dispatch(setRate(!rate ? item : ""));
 					}}
-					style={item === rate ? {fontWeight: 700, color: "black"} : {}}
+					style={item === rate ? { fontWeight: 700, color: "black" } : {}}
 				>
 					{displayRate(item)} & Up
 				</small>

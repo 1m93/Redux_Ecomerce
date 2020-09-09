@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import "../../sass/style.sass";
+import { useSelector, useDispatch } from "react-redux";
+import { setFrom, setTo } from "../../actions/sidebar";
 
-function Price({ handleFromSelect, handleToSelect, from, to }) {
+function Price() {
 	const [fromInput, setFromInput] = useState("");
 	const [toInput, setToInput] = useState("");
+	const from = useSelector((state) => state.sidebar.from);
+	const to = useSelector((state) => state.sidebar.to);
+	const dispatch = useDispatch();
 
 	const priceStep = [];
 	const priceNodes = [1, 80, 160, 240, 1820, 3400, 4980];
@@ -18,10 +22,10 @@ function Price({ handleFromSelect, handleToSelect, from, to }) {
 	}
 
 	const handlePriceClick = (from, to) => {
-		handleFromSelect(from);
-		handleToSelect(to);
-		setFromInput(from)
-		setToInput(to)
+		dispatch(setFrom(from));
+		dispatch(setTo(to));
+		setFromInput(from);
+		setToInput(to);
 	};
 
 	return (
