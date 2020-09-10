@@ -23,7 +23,7 @@ function Type() {
 					<Loader type="ThreeDots" color="#00BFFF" height={25} width={25} />
 				</div>
 			) : allTypeError ? (
-				<h1 className="error">{allTypeError}</h1>
+				<p className="error">{allTypeError}</p>
 			) : (
 				<div>
 					<h4 className="type__title">Show result for</h4>

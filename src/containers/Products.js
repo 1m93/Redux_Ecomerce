@@ -32,7 +32,7 @@ function Products() {
 					<Loader type="ThreeDots" color="#00BFFF" height={50} width={50} />
 				</div>
 			) : error ? (
-				<h1 className="error">{error}</h1>
+				<p className="error">{error}</p>
 			) : (
 				<div>
 					<div className="products__head">

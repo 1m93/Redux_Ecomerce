@@ -35,7 +35,7 @@ function Brand() {
 					<Loader type="ThreeDots" color="#00BFFF" height={25} width={25} />
 				</div>
 			) : allBrandError ? (
-				<h1 className="error">{allBrandError}</h1>
+				<p className="error">{allBrandError}</p>
 			) : (
 				<div>
 					{allBrand.map((item) => (
