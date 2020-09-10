@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as fasStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 
 function Item(props) {
-	const [product, setProduct] = useState(props.product);
-
-	useEffect(() => {
-		setProduct(props.product);
-	}, [props.product]);
+	const [product] = useState(props.product);
 
 	const displayRate = (rate) => {
 		let stars = [];

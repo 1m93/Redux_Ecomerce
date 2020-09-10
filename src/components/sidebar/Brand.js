@@ -1,32 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setBrand, setBrandSearch } from "../../actions/sidebar";
+import fetchAllBrand from "./fetchAllBrand";
+import Loader from "react-loader-spinner";
 
 function Brand() {
-	const [displayBrands, setDisplayBrands] = useState([]);
+	const allBrand = useSelector((state) => state.sidebar.allBrand);
+	const allBrandLoading = useSelector((state) => state.sidebar.allBrandLoading);
+	const allBrandError = useSelector((state) => state.sidebar.allBrandError);
 	const brand = useSelector((state) => state.sidebar.brand);
 	const brandSearch = useSelector((state) => state.sidebar.brandSearch);
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		let xhr = new XMLHttpRequest();
-		let url = "http://localhost:3001/brands?_limit=5";
-
-		if (brandSearch) {
-			url += `&name_like=${brandSearch}`;
-		}
-
-		xhr.open("GET", url);
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState !== 4) return;
-			if (xhr.status === 200) {
-				setDisplayBrands(JSON.parse(xhr.responseText));
-			} else {
-				console.log("HTTP error", xhr.status, xhr.statusText);
-			}
-		};
-		xhr.send();
-	}, [brandSearch]);
+		dispatch(fetchAllBrand(brandSearch));
+	}, [brandSearch, dispatch]);
 
 	const handleBrandSelect = (value) => {
 		dispatch(setBrand(value));
@@ -42,27 +30,37 @@ function Brand() {
 					dispatch(setBrandSearch(value.target.value));
 				}}
 			/>
-			{displayBrands.map((item) => (
-				<div className="brand__name" key={item.id}>
-					<input
-						type="checkbox"
-						id={`brand${item.id}`}
-						checked={brand.includes(item.name) ? true : false}
-						onChange={(value) => {
-							if (!value.target.checked) {
-								handleBrandSelect(
-									brand.filter((name) => {
-										return name !== item.name;
-									})
-								);
-							} else {
-								handleBrandSelect(brand.concat(item.name));
-							}
-						}}
-					/>
-					<label htmlFor={`brand${item.id}`}>{item.name}</label>
+			{allBrandLoading ? (
+				<div className="loading">
+					<Loader type="ThreeDots" color="#00BFFF" height={25} width={25} />
 				</div>
-			))}
+			) : allBrandError ? (
+				<h1 className="error">{allBrandError}</h1>
+			) : (
+				<div>
+					{allBrand.map((item) => (
+						<div className="brand__name" key={item.id}>
+							<input
+								type="checkbox"
+								id={`brand${item.id}`}
+								checked={brand.includes(item.name) ? true : false}
+								onChange={(value) => {
+									if (!value.target.checked) {
+										handleBrandSelect(
+											brand.filter((name) => {
+												return name !== item.name;
+											})
+										);
+									} else {
+										handleBrandSelect(brand.concat(item.name));
+									}
+								}}
+							/>
+							<label htmlFor={`brand${item.id}`}>{item.name}</label>
+						</div>
+					))}
+				</div>
+			)}
 		</div>
 	);
 }

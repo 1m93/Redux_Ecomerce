@@ -1,6 +1,39 @@
-export const setType = (value) => {
+export const fetchAllTypeBegin = () => {
 	return {
-		type: "SET_TYPE",
+		type: "FETCH_ALL_TYPE_BEGIN",
+	};
+};
+
+export const fetchAllTypeSuccess = (value) => {
+	return {
+		type: "FETCH_ALL_TYPE_SUCCESS",
+		payload: value,
+	};
+};
+
+export const fetchAllTypeFailure = (value) => {
+	return {
+		type: "FETCH_ALL_TYPE_FAILURE",
+		payload: value,
+	};
+};
+
+export const fetchAllBrandBegin = () => {
+	return {
+		type: "FETCH_ALL_BRAND_BEGIN",
+	};
+};
+
+export const fetchAllBrandSuccess = (value) => {
+	return {
+		type: "FETCH_ALL_BRAND_SUCCESS",
+		payload: value,
+	};
+};
+
+export const fetchAllBrandFailure = (value) => {
+	return {
+		type: "FETCH_ALL_BRAND_FAILURE",
 		payload: value,
 	};
 };
@@ -8,6 +41,13 @@ export const setType = (value) => {
 export const setBrand = (value) => {
 	return {
 		type: "SET_BRAND",
+		payload: value,
+	};
+};
+
+export const setType = (value) => {
+	return {
+		type: "SET_TYPE",
 		payload: value,
 	};
 };
@@ -42,6 +82,6 @@ export const setBrandSearch = (value) => {
 
 export const resetFilter = () => {
 	return {
-		type: "RESET_FILTER"
-	}
-}
+		type: "RESET_FILTER",
+	};
+};

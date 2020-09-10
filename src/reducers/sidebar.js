@@ -1,6 +1,12 @@
 const initialState = {
-	type: "",
+	allTypeLoading: false,
+	allTypeError: null,
+	allBrandLoading: false,
+	allBrandError: null,
+	allType: [],
+	allBrand: [],
 	brand: [],
+	type: "",
 	rate: "",
 	from: "",
 	to: "",
@@ -9,16 +15,60 @@ const initialState = {
 
 const sidebarReducer = (state = initialState, action) => {
 	switch (action.type) {
-		case "SET_TYPE": {
+		case "FETCH_ALL_TYPE_BEGIN": {
 			return {
 				...state,
-				type: action.payload,
+				allTypeLoading: true,
+				allTypeError: null,
+			};
+		}
+		case "FETCH_ALL_TYPE_SUCCESS": {
+			return {
+				...state,
+				allTypeLoading: false,
+				allType: action.payload,
+			};
+		}
+		case "FETCH_ALL_TYPE_FAILURE": {
+			return {
+				...state,
+				allTypeLoading: false,
+				allTypeError: action.payload,
+				allType: [],
+			};
+		}
+		case "FETCH_ALL_BRAND_BEGIN": {
+			return {
+				...state,
+				allBrandLoading: true,
+				allBrandError: null,
+			};
+		}
+		case "FETCH_ALL_BRAND_SUCCESS": {
+			return {
+				...state,
+				allBrandLoading: false,
+				allBrand: action.payload,
+			};
+		}
+		case "FETCH_ALL_BRAND_FAILURE": {
+			return {
+				...state,
+				allBrandLoading: false,
+				allBrandError: action.payload,
+				allBrand: [],
 			};
 		}
 		case "SET_BRAND": {
 			return {
 				...state,
 				brand: action.payload,
+			};
+		}
+		case "SET_TYPE": {
+			return {
+				...state,
+				type: action.payload,
 			};
 		}
 		case "SET_RATE": {
@@ -47,7 +97,13 @@ const sidebarReducer = (state = initialState, action) => {
 		}
 		case "RESET_FILTER": {
 			return {
-				...initialState,
+				...state,
+				brand: [],
+				type: "",
+				rate: "",
+				from: "",
+				to: "",
+				brandSearch: "",
 			};
 		}
 		default: {
